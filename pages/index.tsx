@@ -211,9 +211,9 @@ function Home({ users }: IThisProps) {
               Add User
             </div>
           </div>
-          <div className="d-flex">
+          <div className="search-block">
             <FormControl
-              className="me-2"
+              className="me-2 search-block-mine"
               variant="standard"
               style={{ width: 150 }}
               error={searchTypeError}
@@ -236,7 +236,7 @@ function Home({ users }: IThisProps) {
                 )}
               </Select>
             </FormControl>
-            <FormControl variant="standard">
+            <FormControl variant="standard" className="search-block-mine">
               <InputLabel htmlFor="input-with-icon-adornment">
                 Search User
               </InputLabel>
